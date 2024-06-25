@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
     double a, b, c;
-    cout<<"DIGITE LOS COEFICIENTES DE LA ASIGUIENTE ECUACCION CUADRATICA"<<endl;
+    cout<<"DIGITE LOS COEFICIENTES DE LA SIGUIENTE ECUACION CUADRATICA"<<endl;
     cout<<"\nax² + bx + c = 0\n";
 
     cout << "\nIngrese el coeficiente a: ";cin >> a;
@@ -42,7 +42,7 @@ int main() {
         cout << "\nLas soluciones son complejas y conjugadas:\n" << endl;
         cout << "x1 = " << Parte_R << " + " << Parte_I << "i" << endl;
         cout << "x2 = " << Parte_R << " - " << Parte_I << "i" << endl;
-        cout<<"\nDonde:\n\n1.Parte Real es : "<<Parte_R<<"\n2.Parte Imaginaria es : "<<Parte_I<<"i"<<endl;
+        cout<<"\nDonde:\n\n1.Parte Real es : "<<Parte_R<<"\n2.Parte Imaginaria es : ±"<<Parte_I<<"i"<<endl;
     }
 
     return 0;
