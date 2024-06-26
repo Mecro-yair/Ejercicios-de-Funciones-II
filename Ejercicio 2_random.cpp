@@ -9,12 +9,16 @@ int main() {
 	int maximo_De_aleatorios,cant_De_aleatorios;
 	
 	srand(time(NULL));
-	//variable = limite_inferior + rand() % (limite_superior +1 -limite inferior);
 	cout << "Digite la Cantidad de números aleatorios: \n";cin >> cant_De_aleatorios;
 	cout << "Digite el Número máximo de número aleatorio(desde 0 ¿hasta?): \n";cin >> maximo_De_aleatorios;
 	cout <<endl;
 	for(int i = 0; i < cant_De_aleatorios ; i++) {
-		cout <<rand() % maximo_De_aleatorios << endl;
+		
+		if (i+1==cant_De_aleatorios){
+			cout <<rand() % maximo_De_aleatorios;
+		}else{
+			cout <<rand() % maximo_De_aleatorios <<" , ";
+		}
 	}
 	
 	return 0;
